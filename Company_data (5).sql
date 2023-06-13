@@ -34,9 +34,15 @@ FROM
     EMPLOYEES e
      JOIN DEPARTMENTS d ON e.department_id = d.id
      JOIN Position p ON e.position_id = p.id;
+     
+     
 insert into EMPLOYEES(Name,Surname,Salary,position_id,Department_id)
 values ('Nurlan','nuruzada',2312,1,1),('Tahir','Huseynov',2312,1,2)
 
 
 insert into POSITION(Position_name)
-values ('ceo')
+values ('ceo'),('hr')
+
+
+insert into DEPARTMENTS(Role)
+values ('developer'),('DevOps')
