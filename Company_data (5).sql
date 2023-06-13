@@ -24,8 +24,6 @@ position_id int REFERENCES POSITION(id)
 )
 
 
-ALTER TABLE EMPLOYEES ALTER COLUMN Salary int NULL
-
 SELECT
     e.[Name],
     e.Surname,
